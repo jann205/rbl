@@ -1,5 +1,3 @@
-[(Méo Có j Cho Mày Xem Đâu)]
-
 local Lib = {}
 function Lib:MakePrototypeLibrary(Title)
 
@@ -48,16 +46,17 @@ TitleUI.BackgroundTransparency = 1
 TitleUI.TextXAlignment = 0
 TitleUI.Parent = Back
 
+---tatbatmenu---
 local ToggleUI = Instance.new("TextButton")
 ToggleUI.Name = "ToggleUI"
 ToggleUI.Font = 9
-ToggleUI.Size = UDim2.new(0, 25, 0, 25)
+ToggleUI.Size = UDim2.new(0, 18, 0, 18)
 ToggleUI.TextScaled = true
 ToggleUI.TextColor3 = Color3.fromHex("ffffff")
 ToggleUI.Position = UDim2.new(0.0242961459, 0, 0.0168576241, 0)
-ToggleUI.Text = "㋡"
+ToggleUI.Text = ""
 ToggleUI.BackgroundTransparency = 0.4
-ToggleUI.BackgroundColor3 = Color3.fromHex("121318")
+ToggleUI.BackgroundColor3 = Color3.fromHex("ffffff")
 ToggleUI.Parent = SG
 Instance.new("UICorner", ToggleUI).CornerRadius = UDim.new(0, 8)
 ToggleUI.MouseButton1Click:Connect(function()
