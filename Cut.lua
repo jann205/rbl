@@ -48,11 +48,11 @@ TitleUI.Parent = Back
 
 local ToggleUI = Instance.new("TextButton")
 ToggleUI.Name = "ToggleUI"
-ToggleUI.Font = 9
+ToggleUI.Font = 5
 ToggleUI.Size = UDim2.new(0, 35, 0, 35)
 ToggleUI.TextScaled = true
 ToggleUI.TextColor3 = Color3.fromHex("cc0000")
-ToggleUI.Position = UDim2.new(1, -124, 0, 4)
+ToggleUI.Position = UDim2.new(0.0242961459, 0, 0.0168576241, 0)
 ToggleUI.Text = "㋡"
 ToggleUI.BackgroundTransparency = 0.4
 ToggleUI.BackgroundColor3 = Color3.fromHex("121318")
