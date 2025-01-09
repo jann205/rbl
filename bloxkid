@@ -1,3 +1,11 @@
+wait(3)
+game. StarterGui: SetCore ("SendNotification", {
+Title = "Blox Fruit";
+Text = "";
+Icon = "";
+duration = "7";
+})
+
 local player = game.Players. LocalPlayer
 
 
