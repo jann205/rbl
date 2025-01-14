@@ -166,8 +166,6 @@ local ThunderImageUI = Instance.new("ImageLabel")
         ThunderImageUI.Size = UDim2.new(0, 50, 0, 50)
         ThunderImageUI.Image = "http://www.roblox.com/asset/?id=101588646830795"
 
-_G.Logo = 101588646830795
-_G.Logo1 = 101588646830795
 local UI = Instance.new("ScreenGui")
 UI.Name = randomString
 UI.Parent = game.CoreGui:WaitForChild("RobloxGui"):WaitForChild("Modules")
@@ -251,7 +249,7 @@ Title.BackgroundTransparency = 1.000
 Title.Position = UDim2.new(0.05, 0, 0.04, 0)
 Title.Size = UDim2.new(0, 483, 0, 31)
 Title.Font = Enum.Font.GothamBold
-Title.Text = "DEATH HUB ".."<font color='rgb(220, 20, 60)'>V1 </font>".."- "..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
+Title.Text = "DEATH HUB ".."<font color='rgb(220, 20, 60)'> </font>".."- "..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
 Title.RichText = true;
 Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title.TextSize = 15.000
@@ -746,7 +744,7 @@ Text2.Position = UDim2.new(0.5, 0, 0.5, 0)
 Text2.Size = UDim2.new(0, 40, 0, 12)
 Text2.ZIndex = 16
 Text2.Font = Enum.Font.GothamBold
-Text2.Text = "Join Zen Hub Discord!"
+Text2.Text = "Follow Me Tik Tok!"
 Text2.TextColor3 = Color3.fromRGB(255, 255, 255)
 Text2.TextSize = 14.000
 
@@ -793,168 +791,9 @@ Textbtn2.MouseButton1Click:Connect(function()
       TextSize = 12
     }
   ):Play()
-  setclipboard("https://discord.gg/7xc8z6H9MR")
+  setclipboard("https://www.tiktok.com/@ninhhoangtruong?_t=ZS-8t3xwJZliOm&_r=1")
   end)
 
-local Butn3 = Instance.new("Frame")
-local Ui3 = Instance.new("UICorner")
-local Textlavel3 = Instance.new("TextLabel")
-local Texbob3 = Instance.new("TextButton")
-
-Butn3.Name = "Butn3"
-Butn3.Parent = SettingFrame
-Butn3.BackgroundColor3 = _G.Color
-Butn3.Size = UDim2.new(0, 190, 0, 30)
-Butn3.Position = UDim2.new(0, 10, 0, 80)
-Butn3.ZIndex = 16
-
-Ui3.CornerRadius = UDim.new(0, 4)
-Ui3.Parent = Butn3
-
-Textlavel3.Parent = Butn3
-Textlavel3.AnchorPoint = Vector2.new(0.5, 0.5)
-Textlavel3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Textlavel3.BackgroundTransparency = 1.000
-Textlavel3.Position = UDim2.new(0.5, 0, 0.5, 0)
-Textlavel3.Size = UDim2.new(0, 40, 0, 12)
-Textlavel3.ZIndex = 16
-Textlavel3.Font = Enum.Font.GothamBold
-Textlavel3.Text = "GOD MODE (Bugs)"
-Textlavel3.TextColor3 = Color3.fromRGB(255, 255, 255)
-Textlavel3.TextSize = 14.000
-
-Texbob3.Parent = Butn3
-Texbob3.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-Texbob3.BackgroundTransparency = 1.000
-Texbob3.BorderSizePixel = 0
-Texbob3.ClipsDescendants = true
-Texbob3.Size = UDim2.new(1, 0, 1, 0)
-Texbob3.ZIndex = 16
-Texbob3.AutoButtonColor = false
-Texbob3.Font = Enum.Font.Gotham
-Texbob3.Text = ""
-Texbob3.TextColor3 = Color3.fromRGB(255, 255, 255)
-Texbob3.TextSize = 14.000
-
-Texbob3.MouseEnter:Connect(function()
-  TweenService:Create(
-    Butn3,
-    TweenInfo.new(0.3,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),
-    {
-      BackgroundTransparency = 0.5
-    }
-  ):Play()
-  end)
-
-Texbob3.MouseLeave:Connect(function()
-  TweenService:Create(
-    Butn3,
-    TweenInfo.new(0.3,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),
-    {
-      BackgroundTransparency = 0
-    }
-  ):Play()
-  end)
-
-Texbob3.MouseButton1Click:Connect(function()
-  CircleClick(Butn3, Mouse.X, Mouse.Y)
-  Textlavel3.TextSize = 0
-  TweenService:Create(
-    Textlavel3,
-    TweenInfo.new(0.4,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),
-    {
-      TextSize = 12
-    }
-  ):Play()
-  local LocalPlayer = game:GetService("Players").LocalPlayer
-
-  local function Invincibility()
-  if LocalPlayer.Character then
-  for i, v in pairs(LocalPlayer.Character:GetChildren()) do
-  if v.Name == "hitbox" then
-  v:Destroy()
-  end
-  end
-  end
-  end
-
-  while wait(0.5) do
-  Invincibility(LocalPlayer)
-  end
-  end)
-
-local Buton4 = Instance.new("Frame")
-local Ui4 = Instance.new("UICorner")
-local Textlval3 = Instance.new("TextLabel")
-local Texbslb4 = Instance.new("TextButton")
-
-Buton4.Name = "Buton4"
-Buton4.Parent = SettingFrame
-Buton4.BackgroundColor3 = _G.Color
-Buton4.Size = UDim2.new(0, 190, 0, 30)
-Buton4.Position = UDim2.new(0, 10, 0, 120)
-Buton4.ZIndex = 16
-
-Ui4.CornerRadius = UDim.new(0, 4)
-Ui4.Parent = Buton4
-
-Textlval3.Parent = Buton4
-Textlval3.AnchorPoint = Vector2.new(0.5, 0.5)
-Textlval3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Textlval3.BackgroundTransparency = 1.000
-Textlval3.Position = UDim2.new(0.5, 0, 0.5, 0)
-Textlval3.Size = UDim2.new(0, 40, 0, 12)
-Textlval3.ZIndex = 16
-Textlval3.Font = Enum.Font.GothamBold
-Textlval3.Text = "DESTROY GUI"
-Textlval3.TextColor3 = Color3.fromRGB(255, 255, 255)
-Textlval3.TextSize = 14.000
-
-Texbslb4.Parent = Buton4
-Texbslb4.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-Texbslb4.BackgroundTransparency = 1.000
-Texbslb4.BorderSizePixel = 0
-Texbslb4.ClipsDescendants = true
-Texbslb4.Size = UDim2.new(1, 0, 1, 0)
-Texbslb4.ZIndex = 16
-Texbslb4.AutoButtonColor = false
-Texbslb4.Font = Enum.Font.Gotham
-Texbslb4.Text = ""
-Texbslb4.TextColor3 = Color3.fromRGB(255, 255, 255)
-Texbslb4.TextSize = 14.000
-
-Texbslb4.MouseEnter:Connect(function()
-  TweenService:Create(
-    Buton4,
-    TweenInfo.new(0.3,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),
-    {
-      BackgroundTransparency = 0.5
-    }
-  ):Play()
-  end)
-
-Texbslb4.MouseLeave:Connect(function()
-  TweenService:Create(
-    Buton4,
-    TweenInfo.new(0.3,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),
-    {
-      BackgroundTransparency = 0
-    }
-  ):Play()
-  end)
-
-Texbslb4.MouseButton1Click:Connect(function()
-  CircleClick(Buton4, Mouse.X, Mouse.Y)
-  Textlval3.TextSize = 0
-  TweenService:Create(
-    Textlval3,
-    TweenInfo.new(0.4,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),
-    {
-      TextSize = 12
-    }
-  ):Play()
-  UI:Destroy()
-  end)
 dragify(ClickFrame, Main)
 local tabs = {}
 local S = false
